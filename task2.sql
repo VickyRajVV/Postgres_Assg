@@ -1,0 +1,6 @@
+ALTER TABLE table1
+  ADD CONSTRAINT fk_table1_dept
+  FOREIGN KEY (dept_id)
+  REFERENCES table2(id)
+  ON DELETE SET NULL
+  ON UPDATE CASCADE;
